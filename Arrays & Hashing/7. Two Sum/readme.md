@@ -16,7 +16,7 @@ The problem seems to be asking for a solution to find two numbers in an array th
 - Time complexity: `O(n)` - We iterate through the array once, and each lookup or insertion in the hashmap takes constant time.
 - Space complexity: `O(n)` - In the worst case, we might need to store all `n` elements in the hashmap.
 ## Code
-```python3
+```python
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         hashmap = {}
@@ -26,7 +26,6 @@ class Solution:
             hashmap[target-nums[i]] = i
         return [-1]
 ```
-
 
 ## Runtime
 ![Solution](image.png)
